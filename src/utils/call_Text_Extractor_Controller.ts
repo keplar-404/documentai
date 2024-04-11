@@ -18,12 +18,12 @@ export default async function text_Extractor_Controller(
       file.type === "application/msword" ||
       file.type ===
         "application/vnd.openxmlformats-officedocument.wordprocessingml.template" ||
-      file.type === "application/vnd.ms-word.document.macroEnabled.12" ||
+      file.type === "application/vnd.ms-word.document.macroEnabled.12"
       // PowerPoint presentation (PPTX, PPT, PPTM)
-      file.type ===
-        "application/vnd.openxmlformats-officedocument.presentationml.presentation" ||
-      file.type === "application/vnd.ms-powerpoint" ||
-      file.type === "application/vnd.ms-powerpoint.presentation.macroEnabled.12"
+      // file.type ===
+      //   "application/vnd.openxmlformats-officedocument.presentationml.presentation" ||
+      // file.type === "application/vnd.ms-powerpoint" ||
+      // file.type === "application/vnd.ms-powerpoint.presentation.macroEnabled.12"
     ) {
       const a = await get_TXT_From_MS_Document(fileContent);
 

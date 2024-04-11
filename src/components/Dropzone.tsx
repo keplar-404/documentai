@@ -7,6 +7,7 @@ import { loadFfmpeg, convertToPDF } from "@/utils/fileConvertor";
 import checkFileType from "@/utils/checkFileType";
 import text_Extractor_Controller from "@/utils/call_Text_Extractor_Controller";
 import handleFileReader from "@/utils/handleFileReader";
+import Tesseract from "tesseract.js"
 
 // import officeToPdf from "@/utils/office_To_Pdf_convertor";
 
